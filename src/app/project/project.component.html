@@ -1,5 +1,16 @@
 <form>
     <label>Enter Project Skill</label><br>
     <input type="text"><br><br>
-    <button type="submit">Submit</button>
+    <button class="btn btn-primary" type="submit">Submit</button>
 </form>
+
+<hr>
+<div>
+    <div *ngFor="let project of projectList">
+        <h4>Project: </h4>{{project.name}}
+        <h4>Description Long: </h4>{{project.long_description}}
+        <h4>Description Short: </h4>{{project.short_description}}
+        <h4>Skills: </h4>{{project.skills}}
+        <h4>Current State:</h4>{{project.current_state}}
+    </div>
+</div>
