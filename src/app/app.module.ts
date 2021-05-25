@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { projectComponent } from './project/project.component';
-import { headerComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { App1Component } from './app1/app1.component'
 import { App2Component } from './app2/app2.component';
@@ -15,8 +14,7 @@ import { App5Component } from './app5/app5.component';
 @NgModule({
   declarations: [
     AppComponent,
-    projectComponent,
-    headerComponent,
+    HomeComponent,
     App1Component,
     App2Component,
     App3Component,
