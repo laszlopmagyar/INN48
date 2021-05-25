@@ -7,6 +7,8 @@ import { Component } from "@angular/core";
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
-    title = "FIS Workday";
+  constructor() {}
+  ngOnInit(): void {}
+
 
 }

@@ -4,23 +4,6 @@
     <div class="container">
 <div class="box">
 <h1>Skills Category</h1>
-<form>
-    <label>Enter Project Skill</label><br>
-    <input type="text" class="form-control" [(ngModel)]='skill'><br><br>{{ skill }}
-    <button class="btn btn-primary" type="submit" (click)="showList(skill)">Show Results</button>
-</form>
-
-<hr>
-<div>
-    <p>Search Skill: {{ skill }}</p>
-    <div *ngFor="let project of projectList">
-        <h4>Project: </h4>{{project.name}}
-        <h4>Description Long: </h4>{{project.long_description}}
-        <h4>Description Short: </h4>{{project.short_description}}
-        <h4>Skills: </h4>{{project.skills}}
-        <h4>Current State:</h4>{{project.current_state}}
-    </div>
-</div>
 
 
 

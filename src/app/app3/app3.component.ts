@@ -7,12 +7,12 @@ import projects from '../../assets/projects.json';
   styleUrls: ['./app3.component.css']
 })
 export class App3Component implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+  value: string = '';
+  showProject: boolean = false;
   skill: string = '';
     title = "Search";
     projectList: {
@@ -25,10 +25,13 @@ export class App3Component implements OnInit {
 
    
     
-    showList(x) {
-        console.log('x')
-        console.log(x)
-        this.skill = x;
+    showList() {
+      this.showProject = true;
     }
+  
+  clearList() {
+    this.showProject = false;
+    this.skill = '';
+  }
 
 }

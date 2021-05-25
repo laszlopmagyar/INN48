@@ -29,11 +29,6 @@
   font-size: 24px;
 }
 
-.clickable {
-  cursor: pointer;
-}
-
-.navbar {
-  margin-bottom: 0;
-  width: 100%;
+.pad-L {
+  margin-left: 25px;
 }
