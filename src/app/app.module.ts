@@ -10,6 +10,7 @@ import { App2Component } from './app2/app2.component';
 import { App3Component } from './app3/app3.component';
 import { App4Component } from './app4/app4.component';
 import { App5Component } from './app5/app5.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { App5Component } from './app5/app5.component';
     App2Component,
     App3Component,
     App4Component,
-    App5Component
+    App5Component,
+    NavComponent
   ],
   imports: [
     BrowserModule,
