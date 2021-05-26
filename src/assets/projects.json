@@ -1,28 +1,28 @@
 [
 {
- "name": "Project 1", 
- "description": "Short Blah, Blah Blah....",
- "contact_email": "Sara.Garcia@fisglobal.com",
- "contact_phone": "555-3737",
+ "name": "Facial Recognition App", 
+ "description": "Mobile application with facial recognition needed for banking app",
+ "contact_email": "Renee.Williams@fisglobal.com",
+ "contact_phone": "555-3820",
  "current_state": "8/29/2021",
- "skills": "Skill Python"
+ "skills": "Angular, Azure"
 },
 {
- "name": "Project 2", 
- "description": "Short Blah, Blah Blah....",
- "contact_email": "Sara.Garcia@fisglobal.com",
+ "name": "Data Lake Connection", 
+ "description": "Working with Corporate Data Group API's to pull data into application",
+ "contact_email": "Brian.Guffton@fisglobal.com",
  "contact_phone": "555-3737",
  "current_state": "Not started",
- "skills": "Skill Python"
+ "skills": "Angular, API"
 
 },
 {
- "name": "Project 3", 
- "description": "Short Blah, Blah Blah....",
-"contact_email": "Sara.Garcia@fisglobal.com",
- "contact_phone": "555-3737",
-  "current_state": "Started 4/2/2021",
- "skills": "Skill Python"
+ "name": "Convert project to Angular", 
+ "description": "Current project is in react and needs to be convert over to FIS standards of Angular Rough Framework",
+ "contact_email": "Tim.Stackner@fisglobal.com",
+ "contact_phone": "555-02028",
+ "current_state": "Started 4/2/2021",
+ "skills": "Angular, JavaScript, HTML"
 
 }
 

@@ -2,19 +2,19 @@
 {
  "name": "Sara Garcia", 
  "contact_email": "Sara.Garcia@fisglobal.com",
- "contact_phone": "555-3737",
- "skills": "Python"
+ "contact_phone": "555-4082",
+ "skills": "Python, Angular"
 },
 {
- "name": "Sara Garcia", 
- "contact_email": "Sara.Garcia@fisglobal.com",
- "contact_phone": "555-3737",
- "skills": "Python"
+ "name": "Sue Sujecki", 
+ "contact_email": "Sue.Sujecki@fisglobal.com",
+ "contact_phone": "555-4920",
+ "skills": "Python, API, JS"
 },
 {
- "name": "Sara Garcia", 
- "contact_email": "Sara.Garcia@fisglobal.com",
- "contact_phone": "555-3737",
+ "name": "Tom Barron", 
+ "contact_email": "Tom.Barron@fisglobal.com",
+ "contact_phone": "555-1740",
  "skills": "Python"
 }
 
