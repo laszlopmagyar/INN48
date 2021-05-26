@@ -2,28 +2,49 @@
 
 <div style="background: 'url(assets/background.jpg)'; background-size: 'cover'; height: 300px">
     <div class="container">
-<div class="box">
-<h1>Skills Category</h1>
-<form>
-    <label>Enter Project Skill</label><br>
-    <input type="text" class="form-control" [(ngModel)]='skill'><br><br>{{ skill }}
-    <button class="btn btn-primary" type="submit" (click)="showList(skill)">Show Results</button>
-</form>
+        <div class="box">
+            <h1>In Demand Skills</h1>
+     
+            <label for="items">Based on Technical Skill Category:</label><br>
 
-<hr>
-<div>
-    <p>Search Skill: {{ skill }}</p>
-    <div *ngFor="let project of projectList">
-        <h4>Project: </h4>{{project.name}}
-        <h4>Description Long: </h4>{{project.long_description}}
-        <h4>Description Short: </h4>{{project.short_description}}
-        <h4>Skills: </h4>{{project.skills}}
-        <h4>Current State:</h4>{{project.current_state}}
+            
+            <div class="category">
+                <h3 id="category-selection">Please Select the Skill Category
+                    <span id="required">*</span>
+                </h3>
+                <div class="select-style ">
+                <select [(ngModel)]="selectedOption" name="type" >
+                  <option style="display:none">
+                  <option [value]="o.name" *ngFor="let o of options">
+                    {{o.name}}
+                  </option>
+                </select>
+              </div>
+            </div>
+
+
+
+           <!-- <select id="items" class="dropdown">
+                <option value="item-1">Application (FIS)</option>
+                <option value="item-2">Basic</option>
+                <option value="item-3">Computer Languages</option>
+                <option value="item-4">Corporate Finance</option>
+                <option value="item-1">Customer Service</option>
+                <option value="item-2">Human Resources</option>
+                <option value="item-3">Managements</option>
+                <option value="item-4">Management Consulting</option>
+                <option value="item-1">Microsoft Skills</option>
+                <option value="item-2">Sales Management</option>
+                <option value="item-3">Systems</option>
+                <option value="item-4">Talent Management</option>
+                <option value="item-1">Technical</option>
+                <option value="item-2">Unix</option>
+            </select>-->
+            <br><br>
+
+             <img src="assets/wordcloud.jpg" height="100%" *ngIf="selectedOption == 'Technical'">
+
+
+        </div>
     </div>
-</div>
-
-
-
-</div>
-</div>
 </div>
