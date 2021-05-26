@@ -9,6 +9,7 @@ import projects from '../../assets/projects.json';
     styleUrls: ['./app1.component.css']
 })
 export class App1Component implements OnInit {
+ 
 
     selectedOption: string;
     options = [

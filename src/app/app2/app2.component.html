@@ -3,13 +3,38 @@
 <div style="background: 'url(assets/background.jpg)'; background-size: 'cover'; height: 300px">
     <div class="container">
         <div class="box">
-            <h1>Find Your Mentors</h1>
-            <label for="items">Using our mentor searching function, you will be able to find a perfect mentor for your desired skills! </label><br>
-            <label for="items">Please enter any skills to find your mentor!</label>
-            <input type="text" placeholder="Enter a skill you want to learn!" class="form-control"><br>
-                <button class="button" type="submit">Show My Mentors!</button>
+            <h1>Find Your Mentors</h1><br>
+            <h4>Using our mentor searching function, you will be able to find a perfect mentor for your desired skills! </h4>
+            <h4>Please enter any skills to find your mentor!</h4><br>
+            <form>
+                <label>Enter a Skill</label><br>
+                <input type="text" [(ngModel)]="skill" name="skill" placeholder="Enter a skill you want to learn!" class="form-control"><br>
+                <p><button class="btn btn-primary bt-green" type="submit" (click)="showList()">Show Results</button>
+                    <button class="btn btn-default pad-L" type="submit" (click)="clearList()">Clear Results</button></p>
+            </form>
 
-           
+
+            <div *ngIf="showMentors">
+                <p>Search Skill: {{ skill }}</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="bkgd-green white-text">
+                            <tr>
+                                <th scope="col">Mentor's Name</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">Skills</th>
+                            </tr>
+                        </thead>
+                        <tr *ngFor="let mentors of mentorsList" class="border-bottom">
+                            <td>{{mentors.name}}</td>
+                            <td><a href="#">{{mentors.contact_email}}</a><br>
+                                {{mentors.contact_phone}}</td>
+                            <td>{{mentors.skills}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
 
         </div>
     </div>

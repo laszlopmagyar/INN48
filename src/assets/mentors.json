@@ -1,0 +1,34 @@
+[
+    {
+     "name": "Will Smith", 
+     "contact_email": "will.smith@fisglobal.com",
+     "contact_phone": "528-4935",
+     "skills": "Python, Java, JavaScript"
+    },
+    {
+     "name": "Chris White", 
+     "contact_email": "chris.white@fisglobal.com",
+     "contact_phone": "138-1398",
+     "skills": "Angular, Python"
+    },
+    {
+     "name": "Sara Garcia", 
+     "contact_email": "Sara.Garcia@fisglobal.com",
+     "contact_phone": "555-3737",
+     "skills": "Python, C#, C++"
+    },
+    {
+        "name": "Paul Davis", 
+        "contact_email": "paul.davis@fisglobal.com",
+        "contact_phone": "646-5233",
+        "skills": "Microsoft Office, Python, PowerBI"
+    },
+    {
+        "name": "Brian Paul", 
+        "contact_email": "brian.paul@fisglobal.com",
+        "contact_phone": "455-1378",
+        "skills": "Python, Android, Ruby"
+    }
+
+    
+]
