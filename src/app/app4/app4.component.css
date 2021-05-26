@@ -24,16 +24,29 @@
   color: #4bcd3e;
   padding-left: 20px;
 }
+.bkgd-green {
+  background: rgb(0, 86, 91);
+}
+.white-text {
+  color: white;
+}
+.bt-green {
+  background: rgb(0, 86, 91);
+}
+
+.bt-green:hover {
+  background-color: rgb(170, 210, 212);
+}
 .pad {
   padding-left: 20px;
   font-size: 24px;
 }
 
-.clickable {
-  cursor: pointer;
+.pad-L {
+  margin-left: 25px;
 }
 
-.navbar {
-  margin-bottom: 0;
-  width: 100%;
+tr.border-bottom td {
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
 }

@@ -8,21 +8,35 @@
             <form>
                 <label>Enter Project Skill</label><br>
                 <input type="text" [(ngModel)]="skill" name="skill" placeholder="Enter a skill you want to learn!" class="form-control"><br>
-                <p><button class="btn btn-primary" type="submit" (click)="showList()">Show Results</button>
-                    <button class="btn btn-primary pad-L" type="submit" (click)="clearList()">Clear Results</button></p>
+                <p><button class="btn btn-primary bt-green" type="submit" (click)="showList()">Show Results</button>
+                    <button class="btn btn-default pad-L" type="submit" (click)="clearList()">Clear Results</button></p>
             </form>
             
             <hr>
 
             <div *ngIf="showProject">
                 <p>Search Skill: {{ skill }}</p>
-                    <div *ngFor="let project of projectList">
-                        <h4>Project: </h4>{{project.name}}
-                        <h4>Description Long: </h4>{{project.long_description}}
-                        <h4>Description Short: </h4>{{project.short_description}}
-                        <h4>Skills: </h4>{{project.skills}}
-                        <h4>Current State:</h4>{{project.current_state}}
-                    </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="bkgd-green white-text">
+                            <tr>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Skills</th>
+                            </tr>
+                        </thead>
+                        <tr *ngFor="let project of projectList" class="border-bottom" >
+                            <td>{{project.name}}</td>
+                            <td>{{project.description}}</td>
+                            <td><a href="#">{{project.contact_email}}</a><br>
+                                {{project.contact_phone}}</td>
+                            <td>{{project.current_state}}</td>
+                            <td>{{project.skills}}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
 

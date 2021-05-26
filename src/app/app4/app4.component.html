@@ -4,7 +4,38 @@
     <div class="container">
         <div class="box">
             <h1>Seach Skilled Resources</h1>
-
+            <h4>Find a skilled resource for your project</h4><br>
+            <form>
+                <label>Enter Skill Set</label><br>
+                <input type="text" [(ngModel)]="skillSet" name="skillSet" placeholder="Enter a skill you want to learn!"
+                    class="form-control"><br>
+                <p><button class="btn btn-primary bt-green" type="submit" (click)="showList()">Show Results</button>
+                    <button class="btn btn-default pad-L" type="submit" (click)="clearList()">Clear Results</button>
+                </p>
+            </form>
+            
+            <hr>
+            
+            <div *ngIf="showResources">
+                <p>Search Skill Set: {{ skillSet }}</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="bkgd-green white-text">
+                            <tr>
+                                <th scope="col">Resource Name</th>
+                                <th scope="col">Resource Contact</th>
+                                <th scope="col">Skills</th>
+                            </tr>
+                        </thead>
+                        <tr *ngFor="let resource of resourceList" class="border-bottom" >
+                            <td>{{resource.name}}</td>
+                            <td><a href="#">{{resource.contact_email}}</a><br>
+                                {{resource.contact_phone}}</td>
+                            <td>{{resource.skills}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
         </div>
     </div>

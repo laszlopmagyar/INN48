@@ -1,24 +1,29 @@
 [
 {
  "name": "Project 1", 
- "long_description": "Long Blah, Blah Blah....",
- "short_description": "Short Blah, Blah Blah....",
- "skills": "Skill Python",
- "current_state": "Not started"
+ "description": "Short Blah, Blah Blah....",
+ "contact_email": "Sara.Garcia@fisglobal.com",
+ "contact_phone": "555-3737",
+ "current_state": "8/29/2021",
+ "skills": "Skill Python"
 },
 {
  "name": "Project 2", 
- "long_description": "Long Blah, Blah Blah....",
- "short_description": "Short Blah, Blah Blah....",
- "skills": "Skill Python",
- "current_state": "Not started"
+ "description": "Short Blah, Blah Blah....",
+ "contact_email": "Sara.Garcia@fisglobal.com",
+ "contact_phone": "555-3737",
+ "current_state": "Not started",
+ "skills": "Skill Python"
+
 },
 {
  "name": "Project 3", 
- "long_description": "Long Blah, Blah Blah....",
- "short_description": "Short Blah, Blah Blah....",
- "skills": "Skill Python",
- "current_state": "Started"
+ "description": "Short Blah, Blah Blah....",
+"contact_email": "Sara.Garcia@fisglobal.com",
+ "contact_phone": "555-3737",
+  "current_state": "Started 4/2/2021",
+ "skills": "Skill Python"
+
 }
 
 ]

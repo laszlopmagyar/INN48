@@ -14,8 +14,8 @@ export class App3Component implements OnInit {
   value: string = '';
   showProject: boolean = false;
   skill: string = '';
-    title = "Search";
-    projectList: {
+  title = "Search";
+  projectList: {
         name: string,
         long_description: string,
         short_description: string,
