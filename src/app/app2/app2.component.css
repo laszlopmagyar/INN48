@@ -29,17 +29,24 @@
   font-size: 24px;
 }
 
-.clickable {
-  cursor: pointer;
+.pad-L {
+  margin-left: 25px;
+}
+.bkgd-green {
+  background: rgb(0, 86, 91);
+}
+.white-text {
+  color: white;
+}
+.bt-green {
+  background: rgb(0, 86, 91);
 }
 
-.navbar {
-  margin-bottom: 0;
-  width: 100%;
+.bt-green:hover {
+  background-color: rgb(170, 210, 212);
 }
 
-.dropdown {
-  padding: 16px;
-  font-size: 16px;
-  border: 1px #ccc solid;
+tr.border-bottom td {
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
 }
